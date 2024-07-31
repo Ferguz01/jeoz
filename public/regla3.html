@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Distribución</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="reg-container">
+    <header>
+        <h1>Calculadora de Distribución</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form id="calculation-form">
+                <label for="total-unidades">Total de Unidades:</label>
+                <input type="number" id="total-unidades" name="total-unidades" required><br><br>
+                <label for="monto-total">Monto Total:</label>
+                <input type="number" id="monto-total" name="monto-total" required><br><br>
+                
+                <div id="unidades-container">
+                    <div class="unidad-especifica">
+                        <label for="unidades-especificas">Unidades Específicas:</label>
+                        <input type="number" class="unidades-especificas" name="unidades-especificas" required><br><br>
+                    </div>
+                </div>
+                
+                <button type="button" id="add-unidad">Agregar Unidades Específicas</button><br><br>
+                <button type="submit">Calcular</button>
+            </form>
+            <div id="resultados-container"></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Calculadora de Distribución</p>
+    </footer>
+
+    <script src="js/regla3.js"></script>
+</body>
+</html>

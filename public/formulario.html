@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario de Datos</h1>
+    </header>
+    <main>
+        <h2>Ingresar Datos</h2>
+        <form id="dataForm">
+            <label for="codpro">Código de Productor:</label>
+            <input type="text" id="codpro" name="codpro" maxlength="4" required>
+
+            <label for="nompro">Nombre de Productor:</label>
+            <input type="text" id="nompro" name="nompro" maxlength="30" required>
+
+            <label for="ggn">GGN:</label>
+            <input type="text" id="ggn" name="ggn" maxlength="13" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <h2>Datos Ingresados</h2>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Código de Productor</th>
+                    <th>Nombre de Productor</th>
+                    <th>GGN</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los datos se llenarán aquí mediante JavaScript -->
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2024 Formulario</p>
+    </footer>
+    <script src="/js/formulario.js"></script>
+</body>
+</html>
